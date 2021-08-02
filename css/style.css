@@ -1,7 +1,14 @@
+.my_bg-black {
+    background-color: black;
+}
+.my_sony-logo {
+    height: 25px;
+}
+
+
 .my_background-one {
     position: relative;
 }
-
 .my_text-content {
     position: relative;
     padding-top: 400px;
@@ -18,9 +25,9 @@
     z-index: -1;
     object-fit: cover;
     object-position: top center;
-
 }
 
+/* MEDIA QUERY CHE SI ATTIVANO AL DI SOTTO DI UNA DETERMINATA VIEWPORT */
 
 @media screen and (max-width: 992px) {
     .my_text-content {
@@ -29,9 +36,29 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .my_translate-side {
+        max-width: 150%;
+        position: relative;
+        left: -25%;
+        z-index: -1
+    }
+    .my_translate-top {
+        margin-top: -90px;
+    }
+}
+
 @media screen and (max-width: 567px) {
     .my_text-content {
         padding-top: 250px;
         padding-bottom: 165px;
+    }
+}
+
+/* MEDIA QUERY CHE SI ATTIVANO AL DI SOPRA DI UNA DETERMINATA VIEWPORT */
+
+@media screen and (min-width: 992px) {
+    .my_translate-top {
+        margin-top: -125px;
     }
 }
